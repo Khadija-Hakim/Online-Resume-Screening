@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+
+{% block body %}
+<header class="masthead" style="background-image: url('{{ url_for ('static',filename='assets/img/p2.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h2>Resume Screening</h2>
+                            <span class="subheading">Choosing the right people for the job.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div class="" style="margin-top:50px">
+ <div class="container px-4 px-lg-5">
+ <div class="row gx-4 gx-lg-5 justify-content-center">
+ <div class="col-md-8 col-lg-14 col-xl-11">
+         <p class="text-center"><h3 class="text-center">Scanning!!</h3></p>
+
+ <div class="" style="margin-top:50px">
+      <div class="row">
+  <div class="col-sm-6">                       
+     <div class="card">
+        <div class="card-body">
+           <h5 class="card-title">Scaned Resumes!</h5>
+             <p class="card-text ">Top 10 Resumes that Match with Job Description.</p>
+             <hr>
+             <p>{{scan}} </p>
+                  
+             
+            <!--  <p>first resume is</p> -->
+</div>
+</div>
+</div>
+<div class="col-sm-6">
+ <div class="card">
+        <div class="card-body">
+           <h5 class="card-title">Job Description</h5>
+             <p class="card-text">Job Description for Resumes</p>
+             <hr>
+             <p>{{scan1}}</p>
+             
+             
+
+</div>
+</div>
+</div>
+                </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+ <div class="" style="margin-bottom: :50px">
+
+
+{% endblock %} 
+</div>  
+
+
+

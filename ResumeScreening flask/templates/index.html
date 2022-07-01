@@ -1,0 +1,102 @@
+{% extends "layout.html" %}
+{% block body %}
+
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for ('static',filename='assets/img/com.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="site-heading">
+                            <h2>Resume Screening</h2>
+                            <span class="subheading">Choosing the right people for the job.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="mb-4">
+          <!-- <div class="container justify-content-center"> -->
+        <!-- <div class="px-4 px-lg-5 row gx-4 gx-lg-5 col-md-10 col-lg-8 col-xl-7"> -->
+         <div class="container px-4 px-lg-5">
+         <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+
+            <h4 class="text-center">RESUME SCREENING</h4>
+            <hr>
+            <div class="row-padding center text-decoration none">
+    <p class="text-align:center text-decoration none  text-secendory"style="margin-top:50px"></p>
+             <p>Choosing the right people for the job is the biggest responsibility of 
+         every business since choosing the right set of people can accelerate 
+         business growth exponentially.The work of selecting the best 
+         talent, assignments, online coding contests among many others is also known 
+        as resume screen.</p>
+        </div>
+    </div>
+  </div>
+</div>
+  </main>
+ <!-- <hr class="my-12"> -->
+ <div class="" style="margin-top:50px">
+ <div class="container px-4 px-lg-5">
+ <div class="row gx-4 gx-lg-5 justify-content-center">
+ <div class="col-md-8 col-lg-14 col-xl-11">
+         <p class="text-center">Upload only pdf files!!</p>
+
+  <div class="row">
+  <div class="col-sm-6">
+  <div class="card">
+  <div class="card-body">
+    <h5 class="card-title">Upload Resumes</h5>
+    <p class="card-text">Upload Your Resumes for Screening!</p>
+    <form action="/upload" method="post" enctype="multipart/form-data">
+    <div class="form-group">
+    <input type="file" name="file" class="form-control-file" id="resume" multiple>
+    </div>
+    </div>
+    <button type="submit"class="btn btn-primary btn-outline-primary text-white">Upload {{filename}}</button>
+    </form>
+    </div>
+  </div>
+
+  <!-- //////////////////////////////////////////////////// -->
+  <div class="col-sm-6">
+     <div class="card">
+        <div class="card-body">
+           <h5 class="card-title">Upload Job Description</h5>
+             <p class="card-text">Upload the Job Description!</p>
+                <form action="/uploader" method="post" enctype="multipart/form-data">
+                  <div class="form-group">
+                     <input type="file" name="file1" class="form-control-file" id="job_des" single>
+                       </div>
+                       </div>
+                        <button type="submit" class="btn btn-outline-primary btn-primary text-white">Upload</button>
+                </form>
+
+                </div>
+                <br>
+
+                <!-- <hr> -->
+                </div>
+              </div>
+              <hr>
+                <!--...................... Scan now.......................... -->
+                <center>
+                  <form action="/scan" method="post">
+                    <center>
+                      {% if name %}
+                      <h3 style="color: blue">ho jana {submit}</h3>
+                      {% endif %}
+                    </center>
+                    <!-- <label for="name">Enter name:</label> -->
+                    <!-- <input type="text" name="name" id="name"> -->
+                    <input type="submit" name="submit" class="btn btn-outline-primary text-white" role="button" aria-pressed="true" value="Scan Now">
+                  </form>
+                
+                              </div>
+
+                </div>
+            </div>
+        </div>
+        <br>
+        <br>
+{% endblock %}       

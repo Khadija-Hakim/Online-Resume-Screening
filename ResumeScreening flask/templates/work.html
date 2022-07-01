@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for ('static',filename='assets/img/lap.webp')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="post-heading">
+                            <h2> Our Work </h2>
+                            <h2 class="subheading">What we've done for people....!</h2>
+                            <span class="meta">
+                            
+                                <a href="#!"></a>
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Post Content-->
+        <article class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <h4>How it's work?</h4>
+                        <hr>
+                        <p>We learned how machine learning and Natural Language Processing can be applied to improve our day-to-day life through the Resume Screening.</p>
+                        <p> A service which can be used by Talent acquisition team to filter resumes based on job description before passing them to technical team for further processing. Basic concept here is, when we upload a job description and a bunch of resumes to the tool, it should rank resumes in descending order according to the percentage it matches with the job description.</p>
+                             <p> Please reach out in the comment section in case of any questions.</p>
+
+                                           </div>
+                </div>
+            </div>
+        </article>
+   {% endblock %}   

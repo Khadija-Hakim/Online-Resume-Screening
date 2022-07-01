@@ -1,0 +1,66 @@
+{% extends "layout.html" %}
+{% block body %}
+        <!-- Page Header-->
+        <header class="masthead" style="background-image: url('{{ url_for ('static',filename='assets/img/ia.jpg')}}')">
+            <div class="container position-relative px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                        <div class="page-heading">
+                            <h2>Contact Us</h2>
+                            <span class="subheading">Please contact us in case of any questions?</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main Content-->
+        <main class="mb-4">
+            <div class="container px-4 px-lg-5">
+                <div class="row gx-4 gx-lg-5 justify-content-center">
+                    <div class="col-md-10 col-lg-8 col-xl-7">
+                <h6>Lets get in touch. Send us a message:</h6>
+                <hr>
+                        <div class="my-5">
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- * * SB Forms Contact Form * *-->
+                            <!-- * * * * * * * * * * * * * * *-->
+                            <!-- This form is pre-integrated with SB Forms.-->
+                            <!-- To make this form functional, sign up at-->
+                            <!-- https://startbootstrap.com/solution/contact-forms-->
+                            <!-- to get an API token!-->
+                            <form>
+  <div class="form-group">
+    <label for="formGroupExampleInput">Name</label>
+    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter the Name">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Email</label>
+    <input type="Email" class="form-control" id="formGroupExampleInput2" placeholder="Enter the Email">
+  </div>
+  <br>
+  <div class="form-group">
+    <label for="formGroupExampleInput2">Message</label>
+    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Your Message">
+  </div>
+  <br>
+  <br>
+          <a href="#" class="btn btn-primary text-white"><i class="fa fa-paper-plane"></i>Send Message</a>
+
+</form>
+                                <br />
+                                <hr>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <div class="container">
+        <div  style="margin-top:48px">
+   <p><i class="fa-solid fa-location-dot"></i>Mainwali, PAKISTAN</p>
+    <p><i class="fa fa-phone margin-right-5"></i> Phone: +00 151515</p>
+    <p><i class="fa fa-envelope margin-right-5"> </i> Email: resumescreening2022@gmail.com</p>
+    </div>
+    <br>
+</div>
+ {% endblock %}   
